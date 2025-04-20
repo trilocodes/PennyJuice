@@ -71,7 +71,7 @@ body {
 
 /* Hero section */
 .hero-bg {
-    background: url('backk.jpg') center/cover no-repeat;
+    background: url('images/backk.jpg') center/cover no-repeat;
     color: white;
     position: relative;
 }
@@ -141,15 +141,15 @@ body {
 
 /* Background images */
 .yellow-section .flavor-image {
-    background-image: url('back2.webp'); /* Replace with correct image */
+    background-image: url('images/back2.webp'); /* Replace with correct image */
 }
 
 .pink-section .section-image {
-    background-image: url('section2.jpg');
+    background-image: url('images/section2.jpg');
 }
 
 .blue-section .section-image {
-    background-image: url('back4.jpg');
+    background-image: url('images/back4.jpg');
 }
 
 /* Section colors */
