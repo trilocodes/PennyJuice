@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penny Juice</title>
+    <link rel="icon" type="image/png" href="fav.png">
+    <meta name="description" content="Penny Juice">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Penny Juice Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#section1">Home</a></li>
+            <li><a href="#section2">Flavors</a></li>
+            <li><a href="#section3">Order</a></li>
+            <li><a href="#section4">Contact</a></li>
+            <li><a href="#" onclick="openAuth()">Login</a></li>
+            <li><a href="#" onclick="openAuth(); showSignup()">Sign Up</a></li>       
+        </ul>
+    </nav>
+
+    <div class="scroll-container">
+        <!-- Section 1 -->
+        <section class="section hero-bg" id="section1">
+            <div class="hero-content">
+                <h1>Welcome to Penny Juice</h1>
+                <p>100% blended fruit juice concentrate made for kids!</p>
+            </div>
+        </section>
+
+        <!-- Section 2 - Flavors -->
+        <section class="section yellow-section" id="section2">
+            <div class="flavor-container">
+                <div class="flavor-text">
+                    <h1>Rainbows of Exciting Flavors!</h1>
+                    <ul>
+                        <li>15 flavors available including 7 color free flavors.</li>
+                        <li>Each case contains 6 - ½ gallon bottles of your choice.</li>
+                        <li>Designed especially for childcare, daycare, preschool, basp and extended daycare.</li>
+                        <li>Get in touch with us today!</li>
+                    </ul>
+                    <a href="#section3" class="learn-button">Learn More</a>
+                </div>
+                <div class="flavor-image"></div>
+            </div>
+        </section>
+
+        <!-- Section 3 - Order -->
+        <section class="section pink-section" id="section3">
+            <div class="section-layout">
+                <div class="section-image"></div>
+                <div class="text-content">
+                    <h1>Healthy Juice Concentrates for All Kids to Enjoy</h1>
+                    <p>We provide a variety of flavors that all kids can enjoy! All the juice concentrates that we sell are compliant with the USDA and FDA guidelines. You don't need to refrigerate the concentrates before or after opening them.</p>
+                    <a href="#section4" class="learn-button">Contact Us</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4 - Contact -->
+        <section class="section blue-section" id="section4">
+            <div class="section-layout">
+                <div class="text-content">
+                    <h1>Penny Juice Products Comply With All Requirements for CACFP, Subsidy, and Nutrition Set Forth by the FDA</h1>
+                    <p>If you're running a childcare center and want to serve healthy beverages to kids every day, order quality juice concentrates from Penny Juice of America. 
+                    Our system is fast and easy to use. Penny Juice greatly reduces storage and handling requirements. 1 gallon pre-measured mix pitchers available to assure cost control and flavor consistency</p>
+                </div>
+                <div class="section-image"></div>
+            </div>
+        </section>
+        <section class="section grey-section" id="section5">
+            <div class="section-layout">
+                <div class="text-content">
+                    <h1>Contact Us</h1>
+                    <p>Address:
+                        Penny Juice of America
+                        915 40th Ave Bettendorf, IA 52722 <br>
+                        Email: pennyjuice@hotmail.com <br>
+                        Phone: 563-386-1999 <br>
+                        Fax: 563-386-6200 <br>
+                        Facebook: https://www.facebook.com/PENNYJUICE/ <br>
+                        Instagram: https://www.instagram.com/pennyjuice/ <br>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+<!-- Overlay Modal -->
+    <div id="authOverlay" class="auth-overlay">
+        <div class="auth-modal">
+        <span class="close-btn" onclick="closeAuth()">&times;</span>
+    
+        <div class="auth-tabs">
+            <button onclick="showLogin()">Login</button>
+            <button onclick="showSignup()">Sign Up</button>
+        </div>
+    
+        <!-- Login Form -->
+        <form id="loginForm" class="auth-form">
+            <h2>Login</h2>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+            <div class="google-btn">Sign in with Google</div>
+        </form>
+    
+        <!-- Signup Form -->
+        <form id="signupForm" class="auth-form hidden">
+            <h2>Sign Up</h2>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Sign Up</button>
+            <div class="google-btn">Sign up with Google</div>
+        </form>
+        </div>
+    </div>
+  
+<script src="script.js"></script>
+</body>
+</html>
